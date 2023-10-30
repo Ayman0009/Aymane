@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -62,6 +64,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav ul li a:active{
+    color: #ff004f;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -101,4 +106,27 @@ nav ul li a:hover::after{
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgba(255, 0, 34, 0.719);
+}
+
+/*--------------typewriter-----------*/
+.cont{
+    display: inline-block;
+}
+.text{
+    letter-spacing: 5px;
+    color: #ff004f;
+    font-family: 'Poppins', sans-serif;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+       typing 2s steps(12),
+      cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0;}
 }
