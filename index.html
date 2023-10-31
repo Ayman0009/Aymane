@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayman</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="app.js"></script>
 </head>
 <body>
-
-    <nav>
-        <a class="logo" href="#"><span class="span2">A</span>YMANE</a>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#"><span class="span2">A</span>YMANE</a>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Offers</a></li>
-        <li><a href="#sec1">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Works">Works</a></li>
+      <li><a href="#Contact">Contact</a></li>
+     </ul>
+    </nav>
+  </header>
+
+    <section id="Home">
     <div id="header">
         <div class="container">
             <div class="header-text">
@@ -30,26 +33,64 @@
               
         </div>
     </div>
-<section id="sec1" class="sec1">
-<div id="About">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
+  </section>
 
-                <h1 class="sub-title">About me</h1>
-
-                <p class="p3">Lorem iprolo dolor sit amet consectetur,
-                     adipisicing elit.<br>Autem, alias distinctio. Sint,
-                      tempora sunt illum perspiciatis labore aut, dicta nemo,
-                       voluptatem cumque nesciunt nihil. Ipsa mollitia
-                        dignissimos atque totam facilis.</p>
-            </div>
-        </div>
+<section id="Services" class="sec2">
+  <h1 class="sub-title">Services</h1>
+    <div class="cont-services">
+        
     </div>
-</div>
+    <div class="card"> 
+        <div class="card-inner"> 
+          <div class="card-front">
+            <div class="icons">
+              <i class="fa-solid fa-tv"></i>
+          </div>
+            <p class="p0">Video Editing</p>
+          </div>
+          <div class="card-back">
+            <p>Back Side</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-2">
+        <div class="icons">
+        </div> 
+        <div class="card-inner-2"> 
+          <div class="card-front-2">
+            <p>Video Editing</p>
+          </div>
+          <div class="card-back-2">
+            <p>Back Side</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+<section id="Works" class="sec3">
+  <h1 class="sub-title2">Works</h1>
+  <div class="cont-works">
+    <a target="_blank" href="https://youtu.be/y4WVwVGt6_8?si=K-VqzVXiPc0AbbDX"><img class="Works-img1" src="Date-img.jpg"></a>
+    <a target="_blank" href="https://youtu.be/7t_5erZTHjs?si=lbgXYTK6lrDNKPV3"><img class="Works-img2" src="onepiece-img.jpg"></a>
+    <a target="_blank" href="https://youtu.be/mCoExlG4mdE?si=OTn3Spk7zC0GORE_"><img class="Works-img3" src="tabib-img.jpg"></a>
+    <a target="_blank" href="https://youtu.be/G6sYr9FOIvI?si=yXxAna6lqzfMAQPB"><img class="Works-img4" src="Ga3-img.jpg"></a>
+  </div>
 </section>
 
 
+
+<section class="sec4" id="Contact">
+  <h1 class="sub-title3">Contact</h1>
+  <button class="sec-btn"><i class="fa-brands fa-google"></i>mail</button>
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</section>
 </body>
 
 </html>
